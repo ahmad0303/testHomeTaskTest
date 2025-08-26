@@ -7,3 +7,7 @@ describe('GET /', () => {
     expect(res.text).toBe('Hello World!');
   });
 });
+
+afterAll(() => {
+  return new Promise(resolve => setTimeout(resolve, 100));
+});
